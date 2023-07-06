@@ -24,8 +24,8 @@ public interface PokemonRepository {
 
     @Query("SELECT MAX(id) FROM Pokemones")
     int getLastId();
-    @Query("SELECT * FROM Pokemones WHERE id = :cuentaId")
-    Pokemon findCuentaById(int cuentaId);
+    @Query("SELECT * FROM Pokemones WHERE id = :pokemonId")
+    Pokemon findPokemonById(int pokemonId);
 
     @Query("SELECT * FROM Pokemones WHERE synced = 0")
     List<Pokemon> getUnsyncedPokemones();

@@ -32,7 +32,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         //Crear mapa en BD
         AppDatabase db = AppDatabase.getInstance(this);
         PokemonRepository repository = db.pokemonRepository();
-        pokemon = repository.findCuentaById(position);
+        pokemon = repository.findPokemonById(position);
 
         if(pokemon!= null){
             latitud = Double.parseDouble(pokemon.getLatitud());

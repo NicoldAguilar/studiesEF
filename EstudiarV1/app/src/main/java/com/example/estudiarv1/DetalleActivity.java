@@ -52,7 +52,7 @@ public class DetalleActivity extends AppCompatActivity {
         //Crear mapa en BD
         AppDatabase db = AppDatabase.getInstance(this);
         PokemonRepository repository = db.pokemonRepository();
-        Pokemon pokemon = repository.findCuentaById(position);
+        Pokemon pokemon = repository.findPokemonById(position);
 
         idPokemon = position;
         regDENomP.setText(pokemon.getNombre());
@@ -105,6 +105,29 @@ public class DetalleActivity extends AppCompatActivity {
                         }
                     });
                 }
+            }
+        });
+
+        //registrar movimiento
+        Button regMov = findViewById(R.id.btnRegMovimiento);
+        regMov.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =  new Intent(DetalleActivity.this, RegistroMovimientoActivity.class);
+                intent.putExtra("position", position);
+                startActivity(intent);
+
+            }
+        });
+
+        //ver movimientos
+        Button mosMov = findViewById(R.id.btnMosMovimiento);
+        mosMov.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =  new Intent(DetalleActivity.this, ListaMovimientosActivity.class);
+                intent.putExtra("position", position);
+                startActivity(intent);
             }
         });
 

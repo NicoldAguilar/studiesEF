@@ -44,25 +44,25 @@
 
     <EditText
         android:id="@+id/etNombreP"
-        android:layout_width="137dp"
-        android:layout_height="34dp"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.689"
+        app:layout_constraintHorizontal_bias="0.697"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.147" />
+        app:layout_constraintVertical_bias="0.122" />
 
     <EditText
         android:id="@+id/etTipoP"
-        android:layout_width="137dp"
-        android:layout_height="34dp"
+        android:layout_width="146dp"
+        android:layout_height="46dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.689"
+        app:layout_constraintHorizontal_bias="0.713"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.212" />
+        app:layout_constraintVertical_bias="0.211" />
 
     <Button
         android:id="@+id/bttnRegistro"
